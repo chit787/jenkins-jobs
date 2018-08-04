@@ -17,7 +17,7 @@ class JobConfig {
           source(class: "org.jenkinsci.plugins.github_branch_source.GitHubSCMSource") {
             id(UUID.randomUUID())
             credentialsId(JENKINS_CREDENTIALS_FOR_GITHUB)
-            repoOwner('xebialabs')
+            repoOwner('chit787')
             repository(repo)
             ignoreOnPushNotifications(true)
 
@@ -75,5 +75,5 @@ class JobConfig {
 folder('Cypress Development')
 
 def cypressPipeline = multibranchPipelineJob('Cypress Development/cypress Pipeline')
-JobConfig.basicPipeline(cypressPipeline, repo = "jenkins-jobs", includeBranches="master PR-*")
+JobConfig.basicPipeline(cypressPipeline, repo = "cypress", includeBranches="master PR-*")
 
