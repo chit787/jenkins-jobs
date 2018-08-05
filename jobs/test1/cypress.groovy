@@ -19,7 +19,7 @@ class JobConfig {
             credentialsId(JENKINS_CREDENTIALS_FOR_GITHUB)
             repoOwner('chit787')
             repository(repo)
-            ignoreOnPushNotifications(true)
+            ignoreOnPushNotifications(false)
 
             traits {
               'org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait' {
