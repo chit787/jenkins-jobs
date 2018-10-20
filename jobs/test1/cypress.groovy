@@ -77,3 +77,6 @@ folder('Cypress Development')
 def cypressPipeline = multibranchPipelineJob('Cypress Development/cypress Pipeline')
 JobConfig.basicPipeline(cypressPipeline, repo = "cypress", includeBranches="master PR-*")
 
+def cypressPipeline2 = multibranchPipelineJob('Cypress Development/cypress Pipeline FR')
+JobConfig.basicPipeline(cypressPipeline2, repo = "cypress", includeBranches="master PR-*")
+
